@@ -12,5 +12,7 @@ app.use(bodyParser.json({ type: '*/*' }));
 
 app.get('/', (req, res) => res.json({ hello: 'world'}));
 
-app.listen(8080);
-console.log('listening on port 8080');
+export default (PORT) => {
+  app.listen(PORT);
+  console.log('listening on port 8080');
+}
