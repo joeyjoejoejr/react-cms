@@ -7,7 +7,8 @@ class TemplateList extends Component {
       let template = this.props.templates[key];
       templates.push(
         <li key={template.id}>
-          {template.name}
+          <h2>{template.name}</h2>
+          <p>Template Type: {template.templateType }</p>
         </li>
       );
     }
